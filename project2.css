@@ -1,0 +1,18 @@
+/* Smooth Scroll for the whole page */
+html { scroll-behavior: smooth; }
+
+body { font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; }
+
+nav { position: fixed; width: 100%; background: #333; color: white; padding: 10px; }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { color: white; text-decoration: none; }
+
+section { padding: 80px 20px; min-height: 300px; }
+
+.project-card { 
+    border: 1px solid #ddd; padding: 20px; margin: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Hover effect */
+.project-card:hover { transform: translateY(-10px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
